@@ -1,3 +1,16 @@
+@mixin nav_line($last: true) {
+  content: "";
+  position: absolute;
+  border-left: 3px solid $color-brand-dark;
+  height: 12px;
+  top: 55px;
+  left: 26px;
+
+  @if $last == true {
+    top: -12px;
+  }
+}
+
 .nav__item {
   height: 60px;
   width: 60px;
@@ -7,26 +20,39 @@
   padding-top: 15px;
   position: relative;
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease; 
+  transition: background-color 0.5s ease, color 0.5s ease;
 
   &:not(:last-child) {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
   }
 
-  &:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    border-left: 3px solid $color-brand-dark;
-    height: 52px;
-    top: 55px;
-    left: 26px;
+  &::after {
+    @include nav_line(false);
+  }
+
+  &:last-child::after {
+    @include nav_line(true);
   }
 
   &.li_active {
     background-color: $color-brand-dark;
+    margin-bottom: 50px;
+
+    &:last-child {
+      margin-top: 50px;
+      margin-bottom: 10px;
+
+      &::after {
+        top: -55px;
+      }
+    }
 
     & > a {
       color: $color-brand-light;
+    }
+
+    &::after {
+      height: 52px;
     }
   }
 }
