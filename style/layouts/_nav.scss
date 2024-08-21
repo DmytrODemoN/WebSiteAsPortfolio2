@@ -1,0 +1,13 @@
+.nav {
+  position: fixed;
+  max-width: 260px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+}
