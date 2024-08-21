@@ -43,6 +43,7 @@ a {
   display: inline-block;
   color: $color-brand-dark;
   text-decoration: none;
+  transition: color 0.3s ease, color 0.3s ease; 
 }
 
 ul {
