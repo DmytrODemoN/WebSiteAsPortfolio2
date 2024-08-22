@@ -1,10 +1,11 @@
 .nav {
   position: fixed;
-  max-width: 260px;
+  width: clamp(160px, 200px, 240px);
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 .nav__list {
