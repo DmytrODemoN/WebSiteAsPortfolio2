@@ -96,13 +96,13 @@ ul {
   top: -55px;
 }
 .nav__item.li_active > a {
-  color: #fff;
+  color: #faf7eb;
 }
 .nav__item.li_active::after {
   height: 52px;
 }
 
-.left-content__border {
+.left-content__self-photo {
   width: 800px;
   height: 950px;
   position: absolute;
