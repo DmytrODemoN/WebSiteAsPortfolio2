@@ -1,0 +1,15 @@
+// .left-content__self-photo {
+//     width: 800px;
+//     height: 1000px;
+//     object-fit: contain;
+// }
+
+.left-content__border {
+    width: 800px;
+    height: 950px;
+    position: absolute;
+    border: 20px solid $color-brand-dark;
+    border-radius: 0 125px 0 125px;
+    background-image: url('/img/self-photo.jpg');
+    background-position: center;
+}

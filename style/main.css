@@ -10,7 +10,7 @@ html {
 
 body {
   margin: 0;
-  background-color: #fff;
+  background-color: #faf7eb;
   color: #4a1e12;
   font-size: 16px;
   font-weight: 300;
@@ -93,7 +93,7 @@ ul {
   margin-bottom: 10px;
 }
 .nav__item.li_active:last-child::after {
-  top: -50px;
+  top: -55px;
 }
 .nav__item.li_active > a {
   color: #fff;
@@ -102,13 +102,28 @@ ul {
   height: 52px;
 }
 
+.left-content__border {
+  width: 800px;
+  height: 950px;
+  position: absolute;
+  border: 20px solid #4a1e12;
+  border-radius: 0 125px 0 125px;
+  background-image: url("/img/self-photo.jpg");
+  background-position: center;
+}
+
+.left-content {
+  position: relative;
+}
+
 .nav {
   position: fixed;
-  max-width: 260px;
+  width: 200px;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 }
 
 .nav__list {
