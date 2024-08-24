@@ -1,9 +1,24 @@
 .left-content__self-photo {
-    width: 800px;
-    height: 950px;
-    position: absolute;
-    border: 20px solid $color-brand-dark;
-    border-radius: 0 125px 0 125px;
-    background-image: url('/img/self-photo.jpg');
-    background-position: center;
+  width: 800px;
+  height: 950px;
+  position: absolute;
+  border: 20px solid $color-brand-dark;
+  border-radius: 0 125px 0 125px;
+  background-image: url("/img/self-photo.jpg");
+  background-position: -50px -250px;
+  background-size: fill;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.left-content__self-photo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #545454 0%, rgba(84, 84, 84, 0) 60%);
+  z-index: 1;
+  pointer-events: none;
 }

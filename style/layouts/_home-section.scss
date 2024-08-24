@@ -1,3 +1,20 @@
 .left-content {
-    position: relative;
+  position: relative;
+
+  & > .main-title {
+    position: absolute;
+    top: 12.5em;
+    left: 100px;
+    font-size: 58px;
+    line-height: 1.5;
+    color: $color-primary-light;
+    z-index: 2;
+  }
+}
+
+.right-content {
+  position: relative;
+  float: right;
+  top: 100px;
+  right: 50px;
 }
