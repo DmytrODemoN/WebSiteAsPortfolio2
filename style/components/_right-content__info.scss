@@ -1,0 +1,46 @@
+.right-content__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 100px;
+  margin-top: 80px;
+
+  & > .right-content__info {
+    position: relative;
+    height: 150px;
+    width: 500px;
+    padding: 50px 50px;
+    right: 444px;
+    border-radius: 15px;
+    color: $color-brand-light;
+    background-color: $color-brand-dark;
+    z-index: 1;
+    transition: right 0.5s ease-in-out;
+
+    & > .title-info {
+      position: absolute;
+      rotate: 90deg;
+      height: 50px;
+      width: 150px;
+      float: right;
+      top: 50px;
+      right: -52px;
+      border-radius: 15px 15px 0 0;
+      border: 3px solid $color-brand-dark;
+      color: $color-brand-dark;
+      background-color: #f2e7d5;
+      text-align: center;
+    }
+
+    & > .page-info {
+      font-size: 32px;
+    }
+
+    & > .link_canva-portfolio {
+      color: $color-brand-light;
+    }
+
+    &.unexpanded {
+      right: 0px;
+    }
+  }
+}
