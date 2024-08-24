@@ -18,7 +18,9 @@ infoContainers.forEach((infoItem) => {
 });
 
 function animateSequentially() {
-  animationIndex >= infoContainers.length ? (animationIndex = 0) : "";
+  animationIndex >= infoContainers.length
+    ? (animationIndex = 0)
+    : animationIndex;
   const currentElement = infoContainers[animationIndex];
   currentElement.classList.add("unexpanded");
 
