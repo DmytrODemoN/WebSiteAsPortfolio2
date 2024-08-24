@@ -71,7 +71,7 @@ ul {
   font-size: 58px;
   line-height: 1.5;
   color: #faf7eb;
-  z-index: 3;
+  z-index: 4;
 }
 
 .right-content {
@@ -188,6 +188,7 @@ ul {
   color: #faf7eb;
   background-color: #4a1e12;
   z-index: 1;
+  cursor: pointer;
   transition: right 0.5s ease-in-out;
 }
 .right-content__list > .right-content__info > .title-info {

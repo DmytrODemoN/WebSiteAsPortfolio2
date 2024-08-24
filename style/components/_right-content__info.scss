@@ -14,6 +14,7 @@
     color: $color-brand-light;
     background-color: $color-brand-dark;
     z-index: 1;
+    cursor: pointer;
     transition: right 0.5s ease-in-out;
 
     & > .title-info {
