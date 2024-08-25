@@ -1,0 +1,40 @@
+.about-info__item {
+  max-width: 400px;
+  max-height: 750px;
+  border: 3px solid $color-brand-dark;
+  border-radius: 0 0 30px 30px;
+
+  & .content {
+    padding: 15px 25px 25px;
+
+    & > * {
+      margin-bottom: 10px;
+    }
+
+    & .title {
+      font-size: 32px;
+      line-height: 1;
+      text-align: center;
+    }
+
+    & .author {
+      text-align: center;
+    }
+
+    & .description {
+      font-size: 18px;
+      max-height: 200px;
+      overflow: hidden;
+    }
+
+    & .button-link {
+        margin: 10px 35%;
+        width: 30%;
+        height: 30px;
+        border: 1px solid $color-brand-dark;
+        border-radius: 10px;
+        background-color: $color-brand-light;
+        text-align: center;
+    }
+  }
+}

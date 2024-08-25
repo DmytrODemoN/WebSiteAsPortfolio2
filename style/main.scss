@@ -1,10 +1,13 @@
 @import "utils/_variables";
 @import "utils/_texts";
 @import "_base";
-@import "layouts/_home-section";
-@import "layouts/_nav";
 @import "layouts/_section";
+@import "layouts/_home-section";
+@import "layouts/_about-section";
+@import "layouts/_nav";
+@import "layouts/_about__list";
 @import "components/_nav__item";
+@import "components/_about__item";
 @import "components/_self-photo";
 @import "components/_right-content__info";
 
