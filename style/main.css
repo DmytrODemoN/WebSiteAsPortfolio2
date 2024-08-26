@@ -163,10 +163,15 @@ ul {
 }
 
 .about-info__item {
+  position: relative;
   max-width: 400px;
   max-height: 750px;
   border: 3px solid #4a1e12;
   border-radius: 0 0 30px 30px;
+}
+.about-info__item .image img {
+  width: 394px;
+  height: 300px;
 }
 .about-info__item .content {
   padding: 15px 25px 25px;
@@ -186,15 +191,33 @@ ul {
   font-size: 18px;
   max-height: 200px;
   overflow: hidden;
+  margin-bottom: 50px;
+}
+.about-info__item .content .description .desc-title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.about-info__item .content .description .desc-list:not(.nowrap) {
+  -moz-columns: 150px auto;
+       columns: 150px auto;
 }
 .about-info__item .content .button-link {
-  margin: 10px 35%;
+  position: absolute;
+  bottom: 10px;
+  left: 35%;
   width: 30%;
-  height: 30px;
+  height: 44px;
+  padding: 8px;
   border: 1px solid #4a1e12;
   border-radius: 10px;
   background-color: #faf7eb;
   text-align: center;
+  transition: background-color 0.3s ease, color 0.5s ease;
+}
+.about-info__item .content .button-link:hover {
+  color: #faf7eb;
+  background-color: #4a1e12;
+  scale: 1.1;
 }
 
 .left-content__self-photo {
