@@ -90,6 +90,14 @@ ul {
   justify-content: center;
 }
 
+.skills-section {
+  padding: 100px 200px;
+  text-align: center;
+}
+.skills-section .section-title {
+  font-size: 108px;
+}
+
 .nav {
   position: fixed;
   width: 200px;
@@ -111,6 +119,13 @@ ul {
   flex-wrap: wrap;
   max-width: 900px;
   gap: 50px 100px;
+}
+
+.skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px 75px;
 }
 
 .nav__item {
@@ -218,6 +233,12 @@ ul {
   color: #faf7eb;
   background-color: #4a1e12;
   scale: 1.1;
+}
+
+.skills__item {
+  font-size: 56px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .left-content__self-photo {
