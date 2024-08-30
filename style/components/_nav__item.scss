@@ -3,8 +3,8 @@
   position: absolute;
   border-left: 3px solid $color-brand-dark;
   height: 12px;
-  top: 55px;
-  left: 26px;
+  top: 65px;
+  left: 30px;
 
   @if $last == true {
     top: -12px;
@@ -12,12 +12,12 @@
 }
 
 .nav__item {
-  height: 60px;
-  width: 60px;
+  height: 70px;
+  width: 70px;
   border-radius: 100%;
   border: 3px solid $color-brand-dark;
   text-align: center;
-  padding-top: 15px;
+  padding-top: 20px;
   position: relative;
   cursor: pointer;
   transition: background-color 0.5s ease, color 0.5s ease;

@@ -20,6 +20,9 @@ body {
   margin: 0;
   background-color: #e3e2df;
   color: #4a1e12;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
@@ -129,12 +132,12 @@ ul {
 }
 
 .nav__item {
-  height: 60px;
-  width: 60px;
+  height: 70px;
+  width: 70px;
   border-radius: 100%;
   border: 3px solid #4a1e12;
   text-align: center;
-  padding-top: 15px;
+  padding-top: 20px;
   position: relative;
   cursor: pointer;
   transition: background-color 0.5s ease, color 0.5s ease;
@@ -147,16 +150,16 @@ ul {
   position: absolute;
   border-left: 3px solid #4a1e12;
   height: 12px;
-  top: 55px;
-  left: 26px;
+  top: 65px;
+  left: 30px;
 }
 .nav__item:last-child::after {
   content: "";
   position: absolute;
   border-left: 3px solid #4a1e12;
   height: 12px;
-  top: 55px;
-  left: 26px;
+  top: 65px;
+  left: 30px;
   top: -12px;
 }
 .nav__item.li_active {
@@ -237,8 +240,13 @@ ul {
 
 .skills__item {
   font-size: 56px;
-  font-weight: 600;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: #4e4e4e;
   cursor: pointer;
+}
+.skills__item:hover {
+  color: rgba(139, 66, 45, 0.9);
 }
 
 .left-content__self-photo {

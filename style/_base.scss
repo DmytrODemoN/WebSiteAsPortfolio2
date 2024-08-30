@@ -12,6 +12,9 @@ body {
   margin: 0;
   background-color: #e3e2df;
   color: $color-brand-dark;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
@@ -43,7 +46,7 @@ a {
   display: inline-block;
   color: $color-brand-dark;
   text-decoration: none;
-  transition: color 0.3s ease, color 0.3s ease; 
+  transition: color 0.3s ease, color 0.3s ease;
 }
 
 ul {

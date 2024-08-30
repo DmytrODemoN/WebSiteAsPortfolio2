@@ -1,5 +1,11 @@
 .skills__item {
-    font-size: 56px;
-    font-weight: 600;
-    cursor: pointer;
+  font-size: 56px;
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: #4e4e4e;
+  cursor: pointer;
+
+  &:hover {
+    color: rgba(139, 66, 45, 0.9);
+  }
 }
