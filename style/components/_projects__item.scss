@@ -1,0 +1,71 @@
+.projects__item {
+  width: 300px;
+  height: clamp(300px, 350px, 500px);
+  padding: 30px 20px;
+  border: 3px solid $color-brand-dark;
+  border-radius: 25px;
+  text-align: center;
+
+  & .name {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  & .desc {
+    font-size: 20px;
+    text-align: start;
+  }
+
+  & .chart-container {
+    width: 250px;
+
+    & .chart {
+      display: flex;
+      flex-direction: column;
+
+      & .chart-bar {
+        height: 30px;
+        margin: 5px 0;
+        color: white;
+        text-align: center;
+        line-height: 30px;
+        font-weight: bold;
+        border-radius: 5px;
+
+        &.html {
+          width: 100%;
+          background-color: #e34c26;
+        }
+
+        &.css {
+          width: 80%;
+          background-color: #264de4;
+        }
+
+        &.js {
+          width: 70%;
+          background-color: #f7df1e;
+          color: #333;
+        }
+
+        &.php {
+          width: 60%;
+          background-color: #777bb4;
+        }
+      }
+    }
+  }
+
+  & .link {
+    padding: 10px 25px;
+    border: 2px solid $color-brand-dark;
+    border-radius: 10px;
+    margin-top: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &:hover {
+      background-color: $color-brand-dark;
+      color: $color-brand-light;
+    }
+  }
+}

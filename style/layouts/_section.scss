@@ -1,3 +1,8 @@
 .section {
-    min-height: 1000px;
+  min-height: 1000px;
+
+  & .section-title {
+    font-size: 108px;
+    text-align: center;
+  }
 }

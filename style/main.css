@@ -67,6 +67,10 @@ ul {
 .section {
   min-height: 1000px;
 }
+.section .section-title {
+  font-size: 108px;
+  text-align: center;
+}
 
 .left-content {
   position: relative;
@@ -95,10 +99,6 @@ ul {
 
 .skills-section {
   padding: 100px 200px;
-  text-align: center;
-}
-.skills-section .section-title {
-  font-size: 108px;
 }
 
 .nav {
@@ -129,6 +129,14 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
   gap: 100px 75px;
+}
+
+.projects__list {
+  padding: 0 150px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 30px;
 }
 
 .nav__item {
@@ -247,6 +255,67 @@ ul {
 }
 .skills__item:hover {
   color: rgba(139, 66, 45, 0.9);
+}
+
+.projects__item {
+  width: 300px;
+  height: 350px;
+  padding: 30px 20px;
+  border: 3px solid #4a1e12;
+  border-radius: 25px;
+  text-align: center;
+}
+.projects__item .name {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.projects__item .desc {
+  font-size: 20px;
+  text-align: start;
+}
+.projects__item .chart-container {
+  width: 250px;
+}
+.projects__item .chart-container .chart {
+  display: flex;
+  flex-direction: column;
+}
+.projects__item .chart-container .chart .chart-bar {
+  height: 30px;
+  margin: 5px 0;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.projects__item .chart-container .chart .chart-bar.html {
+  width: 100%;
+  background-color: #e34c26;
+}
+.projects__item .chart-container .chart .chart-bar.css {
+  width: 80%;
+  background-color: #264de4;
+}
+.projects__item .chart-container .chart .chart-bar.js {
+  width: 70%;
+  background-color: #f7df1e;
+  color: #333;
+}
+.projects__item .chart-container .chart .chart-bar.php {
+  width: 60%;
+  background-color: #777bb4;
+}
+.projects__item .link {
+  padding: 10px 25px;
+  border: 2px solid #4a1e12;
+  border-radius: 10px;
+  margin-top: 30px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.projects__item .link:hover {
+  background-color: #4a1e12;
+  color: #faf7eb;
 }
 
 .left-content__self-photo {
