@@ -1,0 +1,15 @@
+.contacts-section {
+    margin-top: 90px;
+
+  & .contacts {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 5px;
+    width: 100%;
+    max-width: 1000px;
+    height: 100vh;
+  }
+}

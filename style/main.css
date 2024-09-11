@@ -101,6 +101,22 @@ ul {
   padding: 100px 200px;
 }
 
+.contacts-section {
+  margin-top: 90px;
+}
+.contacts-section .contacts {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+  width: 100%;
+  max-width: 1000px;
+  height: 100vh;
+}
+
 .nav {
   position: fixed;
   width: 200px;
@@ -134,6 +150,7 @@ ul {
 .projects__list {
   padding: 0 150px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-content: center;
   gap: 30px;
@@ -383,4 +400,57 @@ ul {
 }
 .right-content__list > .right-content__info.unexpanded {
   right: 0px;
+}
+
+.contact-card {
+  width: 25%;
+  height: 25%;
+  perspective: 1000px;
+  margin-top: 40px;
+}
+.contact-card .card-front, .contact-card .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.6s ease;
+  font-size: 2rem;
+  color: white;
+}
+.contact-card .card-front {
+  background-color: #333;
+}
+.contact-card .card-front.phone {
+  background-color: #4caf50;
+}
+.contact-card .card-front.email {
+  background-color: #ff5722;
+}
+.contact-card .card-front.telegram {
+  background-color: #0088cc;
+}
+.contact-card .card-front.linkedin {
+  background-color: #065580;
+}
+.contact-card .card-front.github {
+  background-color: #333;
+}
+.contact-card .card-back {
+  background-color: #fff;
+  color: #333;
+  transform: rotateY(180deg);
+}
+.contact-card:hover .card-front {
+  transform: rotateY(180deg);
+}
+.contact-card:hover .card-back {
+  transform: rotateY(0deg);
+}
+.contact-card .card-back a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
 }/*# sourceMappingURL=main.css.map */
